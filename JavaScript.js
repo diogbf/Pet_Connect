@@ -98,7 +98,7 @@ function funcaoIniciarConta() {
     }
     else if(emailIniciarSessaoValidade == true && passwordIniciarSessaoValidade == true){
         avisaErros3.style.opacity = "0";
-        window.location.href = "Home.html";
+        window.location.href = "index.html";
     }
 
 }
@@ -270,7 +270,7 @@ function funcaoRegistar2() {
     if(nomeValidade == true && apelidoValidade == true && emailCriarContaValidade == true && passwordCriarContaValidade == true && passwordCriarContaValidade2 == true && moradaValidade == true && localidadeValidade == true && codigoPostalValidade == true && nifValidade == true && telValidade == true){
         utilizador = [nome.value, apelido.value, emailCriarConta.value, passwordCriarConta.value, morada.value, localidade.value, codigoPostal.value, nif.value, tel.value];
         localStorage.setItem("Utilizador", JSON.stringify(utilizador));
-        window.location.href = "Home.html";    
+        window.location.href = "index.html";    
     }else{
         avisoErros.innerText = "Campos inválidos."
     }
@@ -716,7 +716,7 @@ function alertaEncomenda(){
         document.getElementById("avisoPagamento2").innerText = " "
         setTimeout(function(){
             alerta.style.display = "none";
-            window.location.href= "Home.html";
+            window.location.href= "index.html";
         }, 3000);
     }else{
         document.getElementById("avisoPagamento2").innerText = "Escolha um método de pagamento."
@@ -859,7 +859,7 @@ function fatura(){
 fatura();
 
 function continuarComprar(){
-    window.location.href = "Home.html";
+    window.location.href = "index.html";
 }
 
 
@@ -1018,7 +1018,7 @@ function confirmar(){
 
     displayCarrinho();
     carregaCarrinho();
-    window.location.href = "Home.html";
+    window.location.href = "index.html";
 }
 
 
