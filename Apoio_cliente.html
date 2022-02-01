@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoio ao cliente</title>
+    
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/ico" href="recursos/Icons/logoPequeno.ico" >
+    <script src="JavaScript.js"></script>
+ 
+</head>
+    
+<body>    
+    <!-- Menu -->
+    <div class="navbar">
+        <a id="ancoraLogo" href="home.html"><img id="logo" src="Recursos/Icons/logo.png" width="50%" alt="Logotipo Pet Connect"></a>
+        <div class="dropdown">
+            <button class="dropbtn">CÃES 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoCaes.html">Alimentação</a>
+                <a href="HigieneCaes.html">Higiene</a>
+                <a href="AcessoriosCaes.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">GATOS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoGatos.html">Alimentação</a>
+                <a href="HigieneGatos.html">Higiene</a>
+                <a href="AcessoriosGatos.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUTROS ANIMAIS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoOutrosAnimais.html">Alimentação</a>
+                <a href="HigieneOutrosAnimais.html">Higiene</a>
+                <a href="AcessoriosOutrosAnimais.html">Acessórios</a>
+            </div>
+        </div>
+        <a href="Servicos.html">SERVIÇOS</a>
+        <a href="Promocoes.html">PROMOÇÕES</a>
+        <div>
+            <span id="quantidadeCarrinho">0</span>
+            <a id="ancorasIcons2" href="CarrinhoDeCompras.html">
+                <img id="carrinho" src="Recursos/Icons/icon_carrinho.png" alt="Logotipo Pet Connect">
+            </a>
+            <span id="quantidadeFavoritos">0</span>
+            <a id="ancorasIcons3" href="Favoritos.html">
+                <img id="favoritos" src="Recursos/Icons/icon_favoritos.png" alt="Logotipo Pet Connect">
+            </a>
+            <a id="ancorasIconsTexto" href="#"><p id="pIniciar" onclick="clicarSessao()">Inicar Sessão</p></a>
+            <a id="ancorasIcons1" href="#"><img id="conta" src="Recursos/Icons/icon_conta.png" alt="Logotipo Pet Connect" onclick="clicarSessao()"></a>
+        </div>
+    </div>     
+
+    <section class="apoioCliente">
+        <div id="divApoioCliente">
+            <h2 id="titulos">Apoio ao cliente</h2>
+            <p id="textoApoioCliente">Deseja entrar em contacto connosco? Pode fazê-lo via telefone através do número 911234567.<br><br>
+            Se preferir enviar um email basta preencher o campo abaixo.
+            </p>
+            <input id="enviarMail" type="text"><br>
+            <button id="botaoEnviar">Enviar</button>
+        </div>
+        <div id="divImagemApoioCliente">
+            <iframe id="iframeApoioCliente" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.6644422195773!2d-8.410888484651126!3d40.194280579391695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f94fa17ecdc5%3A0xef61b99002ab15e1!2sCoimbraShopping!5e0!3m2!1spt-PT!2spt!4v1620723796791!5m2!1spt-PT!2spt"></iframe>
+        </div>
+    </section>
+
+
+    <!-- Footer --> 
+    <footer>
+        <table id="tableFooter">
+            <tr>
+                <td id="tablecoluna1">
+                    <a id="textoFooter" href="Quem_somos.html">Quem Somos</a>
+                    <a id="textoFooter" href="FAQ's.html">FAQ's</a>
+                    <a id="textoFooter" href="Apoio_cliente.html">Apoio ao cliente</a>
+                </td>
+                <td id="tablecoluna2">
+                    <a id="ancoraSocial" href="https://www.facebook.com/"><img src="recursos/Icons/facebook_logo.png" alt="FacebookLogo"></a>
+                    <a id="ancoraSocial" href="https://www.instagram.com/"><img src="Recursos/Icons/instagram_logo.png" alt="Logotipo Pet Connect"></a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+
+</body>
+</html>

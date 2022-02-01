@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's</title>
+    
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/ico" href="recursos/Icons/logoPequeno.ico" >
+    <script src="JavaScript.js"></script>
+ 
+</head>
+    
+<body>    
+    <!-- Menu -->
+    <div class="navbar">
+        <a id="ancoraLogo" href="home.html"><img id="logo" src="Recursos/Icons/logo.png" width="50%" alt="Logotipo Pet Connect"></a>
+        <div class="dropdown">
+            <button class="dropbtn">CÃES 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoCaes.html">Alimentação</a>
+                <a href="HigieneCaes.html">Higiene</a>
+                <a href="AcessoriosCaes.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">GATOS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoGatos.html">Alimentação</a>
+                <a href="HigieneGatos.html">Higiene</a>
+                <a href="AcessoriosGatos.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUTROS ANIMAIS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoOutrosAnimais.html">Alimentação</a>
+                <a href="HigieneOutrosAnimais.html">Higiene</a>
+                <a href="AcessoriosOutrosAnimais.html">Acessórios</a>
+            </div>
+        </div>
+        <a href="Servicos.html">SERVIÇOS</a>
+        <a href="Promocoes.html">PROMOÇÕES</a>
+        <div>
+            <span id="quantidadeCarrinho">0</span>
+            <a id="ancorasIcons2" href="CarrinhoDeCompras.html">
+                <img id="carrinho" src="Recursos/Icons/icon_carrinho.png" alt="Logotipo Pet Connect">
+            </a>
+            <span id="quantidadeFavoritos">0</span>
+            <a id="ancorasIcons3" href="Favoritos.html">
+                <img id="favoritos" src="Recursos/Icons/icon_favoritos.png" alt="Logotipo Pet Connect">
+            </a>
+            <a id="ancorasIconsTexto" href="#"><p id="pIniciar" onclick="clicarSessao()">Inicar Sessão</p></a>
+            <a id="ancorasIcons1" href="#"><img id="conta" src="Recursos/Icons/icon_conta.png" alt="Logotipo Pet Connect" onclick="clicarSessao()"></a>
+        </div>
+    </div>    
+
+    <section class="faqs">
+        <div id="divFaqs">
+            <h2 id="titulos">FAQ's</h2>
+            <div class="dropdown2">
+                <p id="textoFaqs">1. Que métodos de pagamento se podem utilizar?</p>
+                <div class="dropdown2-content">
+                    <p>Para a sua conveniência pode pagar de diferentes formas. Escolha o método que mais gosta!<br><br>
+                        Cartão de crédito: é totalmente gratuito e permite uma preparação mais rápida da sua encomenda.<br><br>
+                        Multibanco: pagamento gratuito. Deve realizar o pagamento com os dados que aparecem no ecrã, num prazo de 24 horas.
+                    </p>
+                </div>
+            </div>
+            <div class="dropdown2">
+                <p id="textoFaqs">2. Tenho um código promocional. Como posso aplicá-lo?</p>
+                <div class="dropdown2-content">
+                    <p>Se tem um código promocional é uma pessoa com sorte. Poderá aplicar o desconto ao inserir o código no "Carrinho de compras" e depois clicar em "Aplicar".
+                    </p>
+                </div>
+            </div>
+            <div class="dropdown2">
+                <p id="textoFaqs">3. Como posso alterar a minha morada?</p>
+                <div class="dropdown2-content">
+                    <p>Na secção do cliente, ao selecionar "Minha conta" poderá alterar os seus dados pessoais.
+                    </p>
+                </div>
+            </div>
+            <div class="dropdown2">
+                <p id="textoFaqs">4. Quais os gastos de envio?</p>
+                <div class="dropdown2-content">
+                    <p>As taxas de envio dependem do total da sua encomenda. Se efetuar compras superiores a 20€ a PetConnect suportará esses custos, se for uma compra inferior a 20€ os custos de envio serão de 3,99€.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="divImagemFaqs">
+            <img id="imagemFaqs" src="Recursos/Imagens/FAQ's.png" alt="Quem somos">
+        </div>
+    </section>
+
+
+    <!-- Footer --> 
+    <footer>
+        <table id="tableFooter">
+            <tr>
+                <td id="tablecoluna1">
+                    <a id="textoFooter" href="Quem_somos.html">Quem Somos</a>
+                    <a id="textoFooter" href="FAQ's.html">FAQ's</a>
+                    <a id="textoFooter" href="Apoio_cliente.html">Apoio ao cliente</a>
+                </td>
+                <td id="tablecoluna2">
+                    <a id="ancoraSocial" href="https://www.facebook.com/"><img src="recursos/Icons/facebook_logo.png" alt="FacebookLogo"></a>
+                    <a id="ancoraSocial" href="https://www.instagram.com/"><img src="Recursos/Icons/instagram_logo.png" alt="Logotipo Pet Connect"></a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+
+</body>
+</html>

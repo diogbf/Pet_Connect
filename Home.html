@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Connect</title>
+    
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/ico" href="recursos/Icons/logoPequeno.ico" >
+    
+ 
+</head>
+    
+<body>    
+
+    <!-- Menu -->
+    <div class="navbar">
+        <a id="ancoraLogo" href="home.html"><img id="logo" src="Recursos/Icons/logo.png" width="50%" alt="Logotipo Pet Connect"></a>
+        <div class="dropdown">
+            <button class="dropbtn">CÃES 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoCaes.html">Alimentação</a>
+                <a href="HigieneCaes.html">Higiene</a>
+                <a href="AcessoriosCaes.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">GATOS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoGatos.html">Alimentação</a>
+                <a href="HigieneGatos.html">Higiene</a>
+                <a href="AcessoriosGatos.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUTROS ANIMAIS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoOutrosAnimais.html">Alimentação</a>
+                <a href="HigieneOutrosAnimais.html">Higiene</a>
+                <a href="AcessoriosOutrosAnimais.html">Acessórios</a>
+            </div>
+        </div>
+        <a href="Servicos.html">SERVIÇOS</a>
+        <a href="Promocoes.html">PROMOÇÕES</a>
+        <div>
+            <span id="quantidadeCarrinho">0</span>
+            <a id="ancorasIcons2" href="CarrinhoDeCompras.html">
+                <img id="carrinho" src="Recursos/Icons/icon_carrinho.png" alt="Logotipo Pet Connect">
+            </a>
+            <span id="quantidadeFavoritos">0</span>
+            <a id="ancorasIcons3" href="Favoritos.html">
+                <img id="favoritos" src="Recursos/Icons/icon_favoritos.png" alt="Logotipo Pet Connect">
+            </a>
+            <a id="ancorasIconsTexto" href="#"><p id="pIniciar" onclick="clicarSessao()">Inicar Sessão</p></a>
+            <a id="ancorasIcons1" href="#"><img id="conta" src="Recursos/Icons/icon_conta.png" alt="Logotipo Pet Connect" onclick="clicarSessao()"></a>
+        </div>
+    </div>   
+    
+
+    <!-- Slideshow e Produtos em Destaque -->  
+    <section class="destaques">
+        <div class="slide">
+            <img class="slide_fotos" src="Recursos/Imagens/slideshow11.jpg" width="100%" alt="Cao Slideshow">
+            <img class="slide_fotos" src="Recursos/Imagens/slideshow22.png" width="100%" alt="Gato Slideshow">
+            <img class="slide_fotos" src="Recursos/Imagens/slideshow33.jpg" width="100%" alt="Coelho Slideshow">  
+        </div> 
+        <div class="servicos">
+            <h2 id="tituloDestaques">PRODUTOS EM DESTAQUE</h2><br>
+            <div id="divProdutosDestaque">
+                <div class="shop-items">
+                    <div class="shop-item"> 
+                        <a id="ancoraArtigo" href="Descricao1.html">               
+                            <img class="imagemArtigo" src="Recursos/Imagens/caoHumida.png">
+                            <span class="tituloArtigo">Royal Cannin</span>
+                            <div class="detalhesArtigos">
+                                <p class="descricaoArtigo"></span>Puppy mini 85g / saco</p>
+                                <p class="precoArtigo"></span>20,00€</p>                        
+                            </div>
+                        </a>
+                    </div>
+                        <div class="shop-item">
+                            <a id="ancoraArtigo" href="Descricao15.html">  
+                                <img class="imagemArtigo" src="Recursos/Imagens/racao-gato.png">
+                                <span class="tituloArtigo">Purina One</span>
+                                <div class="detalhesArtigos">
+                                    <p class="descricaoArtigo"></span>Sensitive Dual Defense 5Kg</p>
+                                    <p class="precoArtigo"></span>15,00€</p>                        
+                                </div>
+                            </a>
+                        </div>
+                    <div class="shop-item">
+                        <a id="ancoraArtigo" href="Descricao16.html">  
+                            <img class="imagemArtigo" src="Recursos/Imagens/racao-gato2.png">
+                            <span class="tituloArtigo">Libra</span>
+                            <div class="detalhesArtigos">
+                                <p class="descricaoArtigo"></span>Kitten Equilíbrio Nutritivo 5Kg</p>
+                                <p class="precoArtigo"></span>10,00€</p>                        
+                            </div>
+                        </a>
+                    </div>
+                    <div class="shop-item">
+                        <a id="ancoraArtigo" href="Descricao18.html">  
+                            <img class="imagemArtigo" src="Recursos/Imagens/shampoGato2.png">
+                            <span class="tituloArtigo">Smell</span>
+                            <div class="detalhesArtigos">
+                                <p class="descricaoArtigo"></span>Shampoo gatos 500ml</p>
+                                <p class="precoArtigo"></span>5,00€</p>                        
+                            </div>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer --> 
+    <footer id="footerScroll">
+        <table id="tableFooter">
+            <tr>
+                <td id="tablecoluna1">
+                    <a id="textoFooter" href="Quem_somos.html">Quem Somos</a>
+                    <a id="textoFooter" href="FAQ's.html">FAQ's</a>
+                    <a id="textoFooter" href="Apoio_cliente.html">Apoio ao cliente</a>
+                </td>
+                <td id="tablecoluna2">
+                    <a id="ancoraSocial" href="https://www.facebook.com/"><img src="recursos/Icons/facebook_logo.png" alt="FacebookLogo"></a>
+                    <a id="ancoraSocial" href="https://www.instagram.com/"><img src="Recursos/Icons/instagram_logo.png" alt="Logotipo Pet Connect"></a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slide_fotos");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000); 
+        }
+    </script> 
+    
+    <script src="./JavaScript.js"></script>
+
+</body>
+</html>

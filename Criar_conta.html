@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/ico" href="recursos/Icons/logoPequeno.ico" >
+ 
+</head>
+    
+<body>    
+    <!-- Menu -->
+    <div class="navbar">
+        <a id="ancoraLogo" href="home.html"><img id="logo" src="Recursos/Icons/logo.png" width="50%" alt="Logotipo Pet Connect"></a>
+        <div class="dropdown">
+            <button class="dropbtn">CÃES 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoCaes.html">Alimentação</a>
+                <a href="HigieneCaes.html">Higiene</a>
+                <a href="AcessoriosCaes.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">GATOS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoGatos.html">Alimentação</a>
+                <a href="HigieneGatos.html">Higiene</a>
+                <a href="AcessoriosGatos.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUTROS ANIMAIS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoOutrosAnimais.html">Alimentação</a>
+                <a href="HigieneOutrosAnimais.html">Higiene</a>
+                <a href="AcessoriosOutrosAnimais.html">Acessórios</a>
+            </div>
+        </div>
+        <a href="Servicos.html">SERVIÇOS</a>
+        <a href="Promocoes.html">PROMOÇÕES</a>
+        <div>
+            <span id="quantidadeCarrinho">0</span>
+            <a id="ancorasIcons2" href="CarrinhoDeCompras.html">
+                <img id="carrinho" src="Recursos/Icons/icon_carrinho.png" alt="Logotipo Pet Connect">
+            </a>
+            <span id="quantidadeFavoritos">0</span>
+            <a id="ancorasIcons3" href="Favoritos.html">
+                <img id="favoritos" src="Recursos/Icons/icon_favoritos.png" alt="Logotipo Pet Connect">
+            </a>
+            <a id="ancorasIconsTexto" href="#"><p id="pIniciar" onclick="clicarSessao()">Inicar Sessão</p></a>
+            <a id="ancorasIcons1" href="#"><img id="conta" src="Recursos/Icons/icon_conta.png" alt="Logotipo Pet Connect" onclick="clicarSessao()"></a>
+        </div>
+    </div>   
+
+    <section class="sessao2">
+        <div id="divCriarConta2">
+            <h2 id="titulos">Criar conta</h2>
+            <label id="legendas">Nome:</label><label id="legendas">Apelido:</label><br>
+            <input id="nome" type="text" placeholder="Nome *">
+            <input id="apelido" type="text" placeholder="Apelido *"><br>
+            <label id="legendas">Email:</label><br>
+            <input id="emailCriarConta" type="text" placeholder="Email *"><br>
+            <label id="legendas1">Password:</label><label id="legendas1">Confirmar Password:</label><br>
+            <input id="passwordCriarConta" type="password" placeholder="Password *">
+            <input id="passwordCriarConta2" type="password" placeholder="Confirmar Password *"><br>
+            <label id="legendas">Morada:</label><br>
+            <input id="morada" type="text" placeholder="Morada *"><br>
+            <label id="legendas2">Localidade:</label><label id="legendas2">Código Postal (1234-123):</label><br>
+            <select id="localidade">
+                <option value="" selected disabled>Localidade *</option>
+                <option value="Aveiro">Aveiro</option>
+                <option value="Beja">Beja</option>
+                <option value="Braga">Braga</option>
+                <option value="Bragança">Bragança</option>
+                <option value="Castelo Branco">Castelo Branco</option>
+                <option value="Coimbra">Coimbra</option>
+                <option value="Évora">Évora</option>
+                <option value="Faro">Faro</option>
+                <option value="Guarda">Guarda</option>
+                <option value="Leiria">Leiria</option>
+                <option value="Lisboa">Lisboa</option>
+                <option value="Portalegre">Portalegre</option>
+                <option value="Porto">Porto</option>
+                <option value="Santarém">Santarém</option>
+                <option value="Setúbal">Setúbal</option>
+                <option value="Viana do Castelo">Viana do Castelo</option>
+                <option value="Vilareal">Vila Real</option>
+                <option value="Viseu">Viseu</option>
+            </select>
+            <input id="codigoPostal" type="text" placeholder="Código Postal *"><br>
+            <label id="legendas">NIF:</label><br>
+            <input id="nif" type="text" placeholder="NIF *"><br>
+            <label id="legendas">Telemóvel:</label><br>
+            <input id="tel" type="text" placeholder="Tel *"><br>
+            <div style="display: flex;">
+                <button id="botaoRegistar2" onclick="funcaoRegistar2()">Registar</button>
+                <p id="avisoErros"></p>
+            </div>
+        </div>
+        <div id="divImagemCriarConta">
+            <img id="gatoCriarConta" src="Recursos/Imagens/gato_conta.jpg" alt="Gato">
+        </div>
+    </section>
+
+
+    <!-- Footer --> 
+    <footer id="footerScroll">
+        <table id="tableFooter">
+            <tr>
+                <td id="tablecoluna1">
+                    <a id="textoFooter" href="Quem_somos.html">Quem Somos</a>
+                    <a id="textoFooter" href="FAQ's.html">FAQ's</a>
+                    <a id="textoFooter" href="Apoio_cliente.html">Apoio ao cliente</a>
+                </td>
+                <td id="tablecoluna2">
+                    <a id="ancoraSocial" href="https://www.facebook.com/"><img src="recursos/Icons/facebook_logo.png" alt="FacebookLogo"></a>
+                    <a id="ancoraSocial" href="https://www.instagram.com/"><img src="Recursos/Icons/instagram_logo.png" alt="Logotipo Pet Connect"></a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script src="./JavaScript.js"></script>
+</body>
+
+</html>

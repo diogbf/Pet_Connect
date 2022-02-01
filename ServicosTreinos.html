@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos</title>
+    
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/ico" href="recursos/Icons/logoPequeno.ico" >
+    
+ 
+</head>
+    
+<body>    
+    <!-- Menu -->
+    <div class="navbar">
+        <a id="ancoraLogo" href="home.html"><img id="logo" src="Recursos/Icons/logo.png" width="50%" alt="Logotipo Pet Connect"></a>
+        <div class="dropdown">
+            <button class="dropbtn">CÃES 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoCaes.html">Alimentação</a>
+                <a href="HigieneCaes.html">Higiene</a>
+                <a href="AcessoriosCaes.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">GATOS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoGatos.html">Alimentação</a>
+                <a href="HigieneGatos.html">Higiene</a>
+                <a href="AcessoriosGatos.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUTROS ANIMAIS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoOutrosAnimais.html">Alimentação</a>
+                <a href="HigieneOutrosAnimais.html">Higiene</a>
+                <a href="AcessoriosOutrosAnimais.html">Acessórios</a>
+            </div>
+        </div>
+        <a href="Servicos.html">SERVIÇOS</a>
+        <a href="Promocoes.html">PROMOÇÕES</a>
+        <div>
+            <span id="quantidadeCarrinho">0</span>
+            <a id="ancorasIcons2" href="CarrinhoDeCompras.html">
+                <img id="carrinho" src="Recursos/Icons/icon_carrinho.png" alt="Logotipo Pet Connect">
+            </a>
+            <span id="quantidadeFavoritos">0</span>
+            <a id="ancorasIcons3" href="Favoritos.html">
+                <img id="favoritos" src="Recursos/Icons/icon_favoritos.png" alt="Logotipo Pet Connect">
+            </a>
+            <a id="ancorasIconsTexto" href="#"><p id="pIniciar" onclick="clicarSessao()">Inicar Sessão</p></a>
+            <a id="ancorasIcons1" href="#"><img id="conta" src="Recursos/Icons/icon_conta.png" alt="Logotipo Pet Connect" onclick="clicarSessao()"></a>
+        </div>
+    </div>   
+
+    <section class="treinos">
+        <div id="divQuemSomos">
+            <h2 id="titulos">Treinos</h2>
+            <h2 id="subTitulos">Descrição</h2>
+            <p id="textoTreinos">O treino e a brincadeira são essenciais para um desenvolvimento saudável do seu animal de estimação. É mais provável que um animal bem treinado e obediente se torne um animal adulto equilibrado e feliz.</p>
+            <h2 id="subTitulos">Packs de treino</h2>
+            <div id="botoes2">
+                <button id="botaoTreino" onclick="">1 treino / 24,99€</button>
+                <button id="botaoTreino" onclick="">2 treinos / 49,99€</button>
+                <button id="botaoTreino" onclick="">3 treinos / 79,99€</button>
+            </div>
+            <p id="textoTreinos">A marcação de todos os treinos será sempre no mesmo dia da semana e no mesmo horário</p>
+            <h2 id="subTitulos">Marcação</h2>
+            <input type="date" id="dataTreinos" value="dd/mm/aaaa">
+            <div class="botoes1">
+                <button id="adicionarCarrinho2" onclick="">Adicionar ao carrinho</button>
+                <a id="favoritosVazio2" href=""><img src="Recursos/Icons/icon2_favoritos.png" alt="Favoritos vazio"></a>
+            </div>   
+        </div>
+        <div id="divVideoTreino">
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/1oDGa2yPb2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p id="informacao">Para mais informações contacte-nos 912345678.</p>
+        </div>
+    </section>
+
+
+    <!-- Footer --> 
+    <footer>
+        <table id="tableFooter">
+            <tr>
+                <td id="tablecoluna1">
+                    <a id="textoFooter" href="Quem_somos.html">Quem Somos</a>
+                    <a id="textoFooter" href="FAQ's.html">FAQ's</a>
+                    <a id="textoFooter" href="Apoio_cliente.html">Apoio ao cliente</a>
+                </td>
+                <td id="tablecoluna2">
+                    <a id="ancoraSocial" href="https://www.facebook.com/"><img src="recursos/Icons/facebook_logo.png" alt="FacebookLogo"></a>
+                    <a id="ancoraSocial" href="https://www.instagram.com/"><img src="Recursos/Icons/instagram_logo.png" alt="Logotipo Pet Connect"></a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script src="JavaScript.js"></script>
+
+</body>
+</html>

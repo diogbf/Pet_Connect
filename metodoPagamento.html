@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Connect</title>
+    
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/ico" href="recursos/Icons/logoPequeno.ico" >
+    
+ 
+</head>
+    
+<body id="bodyPagamento">    
+
+    <!-- Menu -->
+    <div class="navbar">
+        <a id="ancoraLogo" href="home.html"><img id="logo" src="Recursos/Icons/logo.png" width="50%" alt="Logotipo Pet Connect"></a>
+        <div class="dropdown">
+            <button class="dropbtn">CÃES 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoCaes.html">Alimentação</a>
+                <a href="HigieneCaes.html">Higiene</a>
+                <a href="AcessoriosCaes.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">GATOS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoGatos.html">Alimentação</a>
+                <a href="HigieneGatos.html">Higiene</a>
+                <a href="AcessoriosGatos.html">Acessórios</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUTROS ANIMAIS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="AlimentacaoOutrosAnimais.html">Alimentação</a>
+                <a href="HigieneOutrosAnimais.html">Higiene</a>
+                <a href="AcessoriosOutrosAnimais.html">Acessórios</a>
+            </div>
+        </div>
+        <a href="Servicos.html">SERVIÇOS</a>
+        <a href="Promocoes.html">PROMOÇÕES</a>
+        <div>
+            <span id="quantidadeCarrinho">0</span>
+            <a id="ancorasIcons2" href="CarrinhoDeCompras.html">
+                <img id="carrinho" src="Recursos/Icons/icon_carrinho.png" alt="Logotipo Pet Connect">
+            </a>
+            <span id="quantidadeFavoritos">0</span>
+            <a id="ancorasIcons3" href="Favoritos.html">
+                <img id="favoritos" src="Recursos/Icons/icon_favoritos.png" alt="Logotipo Pet Connect">
+            </a>
+            <a id="ancorasIconsTexto" href="#"><p id="pIniciar" onclick="clicarSessao()">Inicar Sessão</p></a>
+            <a id="ancorasIcons1" href="#"><img id="conta" src="Recursos/Icons/icon_conta.png" alt="Logotipo Pet Connect" onclick="clicarSessao()"></a>
+        </div>
+    </div>   
+    
+
+    <!-- Pagamento -->  
+    <section id="pagamento">
+        <div>
+            <h2 id="titulos">Método Pagamento</h2>
+            <label class="container">Transferência bancária <div id="mb"><img src="Recursos/Icons/mb.png" alt="multibanco"></div>
+                <input type="radio" name="radio" onclick="onlyOne()">
+                <span class="checkmark"></span>
+            </label>
+            <div id="dadosTransferencia" style="display: none;">
+                <div id="dadosTransferencia2">
+                    <p id="a"><b>Entidade:</b> 12345</p>
+                    <p id="a"><b>Referência:</b> 123456789</p>
+                    <div id="montanteTodo">
+                        <p id="montante"><b>Montante: </b></p>
+                        <p id="montante2"></p>
+                    </div>
+                </div>
+                <p id="avisoPagamento">Tem o prazo de <b>24h</b> para efetuar o pagamento.</p>
+            </div>
+            <label class="container">Cartão de crédito/débito <div id="mb"><img src="Recursos/Icons/visa2.png" alt="multibanco"></div>
+                <input type="radio" name="radio" onclick="onlyOne2()">
+                <span class="checkmark"></span>
+            </label>
+            <div id="dadosCartao" style="display: none;">
+                <label id="legendas3">Número do cartão:</label>
+                <input type="text" id="numeroCartao" placeholder="Número do cartão" maxlength="16">
+                <label id="legendas3">Nome do titular:</label>
+                <input type="text" id="nomeTitular" placeholder="Nome do titular">
+                <label id="legendas4">Mês:</label><label id="legendas4">Ano:</label><label id="legendas5">CVV:</label>
+                <div id="dadosCartao2">
+                    <select id="mes">
+                        <option value="" selected disabled>Mês</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="ano">
+                        <option value="" selected disabled>Ano</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                    </select>
+                    <input type="text" id="cvv" placeholder="CVV" maxlength="3">
+                </div>
+            </div>
+            <div id="finalizarCompraTotal">
+                <button id="finalizarCompra" onclick="alertaEncomenda()">FINALIZAR COMPRA</button>
+                <p id="avisoPagamento2"></p>
+            </div>
+        </div>
+        
+        <div class="teste123">
+            <h2 id="titulos2">Dados do Cliente</h2>
+            <div id="dadosCliente">
+                <p id="b"><b>Nome:</b></p>
+                <p id="nomeFinal"></p>
+
+                <p id="b"><b>Moradada:</b></p>
+                <p id="ruaFinal"></p>
+                <p id="codigoFinal"></p>
+                <p id="localidadeFinal"></p>
+
+                <p id="b"><b>Tel:</b></p>
+                <p id="telFinal"></p>
+
+                <p id="b"><b>NIF:</b></p>
+                <p id="nifFinal"></p>
+            </div>
+            <h2 id="titulos2">Resumo da Compra</h2>
+            <div class="resumoCompra">
+            </div>
+        </div>
+    </section>
+    
+    <div id="alerta">
+        <div id="imagemalerta">
+            <img src="Recursos/Icons/icon_carrinho_alerta.png" alt="Icon Alerta">
+        </div>
+        <p id="paragrafoAlerta">Após pagamento iniciaremos a preparação da sua encomenda.<br><b>Obrigado!</b></p>
+    </div>
+
+    <div id="alerta2">
+        <div id="imagemalerta">
+            <img src="Recursos/Icons/icon_carrinho_alerta.png" alt="Icon Alerta">
+        </div>
+        <p id="paragrafoAlerta">Estamos a preparar a sua encomenda.<br><b>Obrigado!</b></p>
+    </div>
+
+    <!-- Footer --> 
+    <footer id="footerScroll">
+        <table id="tableFooter">
+            <tr>
+                <td id="tablecoluna1">
+                    <a id="textoFooter" href="Quem_somos.html">Quem Somos</a>
+                    <a id="textoFooter" href="FAQ's.html">FAQ's</a>
+                    <a id="textoFooter" href="Apoio_cliente.html">Apoio ao cliente</a>
+                </td>
+                <td id="tablecoluna2">
+                    <a id="ancoraSocial" href="https://www.facebook.com/"><img src="recursos/Icons/facebook_logo.png" alt="FacebookLogo"></a>
+                    <a id="ancoraSocial" href="https://www.instagram.com/"><img src="Recursos/Icons/instagram_logo.png" alt="Logotipo Pet Connect"></a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script src="./JavaScript.js"></script>
+
+</body>
+</html>
